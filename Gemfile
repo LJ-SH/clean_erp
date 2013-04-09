@@ -7,6 +7,8 @@ gem 'rails', '3.2.1'
 
 gem 'sqlite3'
 
+gem 'mysql2' 						# enable mysql as database, comment-by-LJ on 7-Apr-2013
+
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -20,7 +22,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
+gem 'jquery-rails' #default in rails 3.1+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -36,3 +38,8 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+gem 'jquery-ui-rails' 				#enable jQuery UI, comment-by-LJ on 7-Apr-2013
+
+gem 'activeadmin', '0.6.0'			#enable active_admin framework, comment-by-LJ on 7-Apr-2013
+gem "meta_search", '>= 1.1.0.pre' 	#required by active_admin with Rails>=3.1 

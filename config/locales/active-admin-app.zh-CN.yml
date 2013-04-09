@@ -1,0 +1,19 @@
+zh-CN:
+  activerecord:
+    models:
+      admin_user: 
+        one: "用户管理"
+        other: "用户管理"
+    attributes:
+      admin_user:
+        email: "电子邮件"
+        password: "密码"
+        password_confirmation: "再次确认密码"
+        current_sign_in_at: "当前登录时间"
+        role:  "角色"
+        user_name: "用户名"
+        last_sign_in_at:  "最近一次登录时间"
+        sign_in_count:  "登录次数"
+        login: 登录名
+        organization:  公司名
+        telephone:  电话号码        

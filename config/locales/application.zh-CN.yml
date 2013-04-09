@@ -1,0 +1,8 @@
+zh-CN:
+# system level defintion
+  clean_erp: "自助企业管理系统"
+  system_setting: "系统设置"
+  sign_in:
+    placeholder:
+      login_hint: 请输入用户名或者电子邮件
+      password_hint: 请输入密码  
