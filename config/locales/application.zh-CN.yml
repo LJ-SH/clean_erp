@@ -2,7 +2,28 @@ zh-CN:
 # system level defintion
   clean_erp: "自助企业管理系统"
   system_setting: "系统设置"
+  active_admin:
+    access_denied:
+      message:  "没有权限访问!"  
   sign_in:
     placeholder:
       login_hint: 请输入用户名或者电子邮件
       password_hint: 请输入密码  
+  role:
+    :super_admin: "超级管理员"        
+    :admin:   "管理员"
+    :dev: "研发"
+    :fin: "财务" 
+    :plm: "产品经理"
+    :sales: "销售"
+    :material_controller: "物料专员"
+    :post_sales: "售后服务"
+    :other: "其他"    
+  label:
+    component_category:
+      level0: 一级分类
+      level1: 二级分类
+      level2: 三级分类
+      level3: 四级分类    
+  form:
+    category_sel_tip_option: 请选择分类类型

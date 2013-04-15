@@ -205,4 +205,5 @@ ActiveAdmin.setup do |config|
   #
   # config.filters = true
 
+  config.authorization_adapter = ActiveAdmin::CanCanAdapter
 end

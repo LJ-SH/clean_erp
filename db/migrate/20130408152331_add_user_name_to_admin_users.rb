@@ -2,7 +2,7 @@ class AddUserNameToAdminUsers < ActiveRecord::Migration
   def up
   	add_column :admin_users, :user_name, :string
   	AdminUser.reset_column_information           #force all cached information reloaded on next request
-  	AdminUser.where("email = :email", {:email => "admin@example.com"})[0].update_attribute(:user_name, "super_admin") # no validation applies
+  	AdminUser.find_by_email("super_admin@example.com").update_attribute(:user_name, "super_admin") 
   	add_index :admin_users, :user_name, :unique => true
   end
 

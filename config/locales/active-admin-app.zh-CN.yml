@@ -4,6 +4,9 @@ zh-CN:
       admin_user: 
         one: "用户管理"
         other: "用户管理"
+      component_category:
+        one: '元件分类'
+        other: '元件分类'        
     attributes:
       admin_user:
         email: "电子邮件"
@@ -14,6 +17,35 @@ zh-CN:
         user_name: "用户名"
         last_sign_in_at:  "最近一次登录时间"
         sign_in_count:  "登录次数"
-        login: 登录名
+        tlogin: 登录名
         organization:  公司名
-        telephone:  电话号码        
+        telephone:  电话号码      
+      component_category:
+        name: 名称
+        comment: 备注
+        updated_by_email: 最近更新帐号
+        updated_at:  更新时间
+        code:  编号(2位数字)
+        ancestry: 父类信息
+        ancestry_depth: 分类类别
+        level0: 一级父类
+        level1: 二级父类
+        level2: 三级父类
+        level3: 四级父类          
+        actions:  操作                
+  errors:
+    messages:    
+      destroy_fails_if_last_admin: 最后一个系统管理员不能被删除
+      destroy_fails_if_in_use:  "(子)模型-%{categoryname}-正在被使用"
+      destroy_fails_if_children_exist: "子节点-%{childname}-不能被删除"      
+  devise:
+    failure:
+      invalid: 登录名（用户名或邮箱）或密码错误  
+  active_admin:
+    sidebars:
+      help: "帮助"
+    scopes:
+      depth0: 一级分类
+      depth1: 二级分类      
+      depth2: 三级分类
+      depth3: 四级分类              

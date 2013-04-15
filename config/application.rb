@@ -10,6 +10,11 @@ if defined?(Bundler)
 end
 
 module CleanErp
+
+  # Constant defintion
+  ROLE_DEFINITION = [:super_admin, :admin, :dev, :fin, :plm, :sales, :material_controller, :post_sales, :other]
+  COMPONENT_CATEGORY_MAP = [:level0, :level1, :level2, :level3]
+
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers

@@ -1,5 +1,10 @@
 source 'https://rubygems.org'
 
+if RUBY_VERSION =~ /1.9/
+	Encoding.default_external = Encoding::UTF_8
+	Encoding.default_internal = Encoding::UTF_8
+end
+
 gem 'rails', '3.2.1'
 
 # Bundle edge Rails instead:
@@ -43,3 +48,9 @@ gem 'jquery-ui-rails' 				#enable jQuery UI, comment-by-LJ on 7-Apr-2013
 
 gem 'activeadmin', '0.6.0'			#enable active_admin framework, comment-by-LJ on 7-Apr-2013
 gem "meta_search", '>= 1.1.0.pre' 	#required by active_admin with Rails>=3.1 
+
+gem 'enum_column3'					#enable enum support to mysql, comment-by-LJ on 9-Apr-2013
+
+gem 'cancan'		#enable permission management, comment-by-LJ on 12-Apr-2013
+
+gem 'ancestry'		#enable tree-acchitecture, comment-by-LJ on 12-Apr-2013

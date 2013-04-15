@@ -1,6 +1,22 @@
+#encoding: UTF-8  
+
 class ApplicationController < ActionController::Base
+
   protect_from_forgery
   before_filter :set_i18n_locale  
+
+  rescue_from CanCan::AccessDenied do |exception|
+    respond_to do |format|
+      format.html do
+        logger.info expection.message
+        redirect_to admin_root_path, :alert => exception.message
+      end
+    end
+  end
+
+  def current_ability
+    @current_ability ||= Ability.new(current_admin_user)
+  end  
 
   protected
   
